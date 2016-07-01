@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charri.MvvmCross.Plugins.Routing", "Charri.MvvmCross.Plugins.Routing\Charri.MvvmCross.Plugins.Routing.csproj", "{B99A0FE9-6EA6-4AED-BB64-F0DE047AF867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charri.MvvmCross.Plugins.Routing.Tests", "Charri.MvvmCross.Plugins.Routing.Tests\Charri.MvvmCross.Plugins.Routing.Tests.csproj", "{2D718542-0BA0-4A73-B028-8CA98E0680B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B99A0FE9-6EA6-4AED-BB64-F0DE047AF867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99A0FE9-6EA6-4AED-BB64-F0DE047AF867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99A0FE9-6EA6-4AED-BB64-F0DE047AF867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99A0FE9-6EA6-4AED-BB64-F0DE047AF867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D718542-0BA0-4A73-B028-8CA98E0680B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D718542-0BA0-4A73-B028-8CA98E0680B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D718542-0BA0-4A73-B028-8CA98E0680B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D718542-0BA0-4A73-B028-8CA98E0680B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
