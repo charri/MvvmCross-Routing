@@ -65,11 +65,14 @@ public class MainViewModel : MvxViewModel
 
 ## Facades
 
-Say you are building a task app and depending on the type of task you want to show a different view. This is where Facades come in handy:
+Say you are building a task app and depending on the type of task you want to show a different view. This is where RoutingFacades come in handy (there is only so much regular expressions can do for you).
+
+mvx://task/?id=00000000000000000000000000000000 <-- this task is done, show read-only view (ViewModelA)
+mvx://task/?id=00000000000000000000000000000001 <-- this task isn't, go straight to edit view (ViewModelB)
 
 ```cs
 
-[assembly: MvxRouting(typeof(SimpleRoutingFacade), @"mvx://test/\?id=(?<id>[A-Z0-9]{32})$")]
+[assembly: MvxRouting(typeof(SimpleRoutingFacade), @"mvx://task/\?id=(?<id>[A-Z0-9]{32})$")]
 namespace *.RoutingFacades
 {
 	public class SimpleRoutingFacade
