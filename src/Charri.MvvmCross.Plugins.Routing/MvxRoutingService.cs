@@ -28,7 +28,7 @@ namespace Charri.MvvmCross.Plugins.Routing
             foreach (var routeAttr in
                 assemblies.SelectMany(a => a.GetCustomAttributes<MvxRoutingAttribute>()))
             {
-                Routes.Add(new Regex(routeAttr.UrlRegex, RegexOptions.CultureInvariant | RegexOptions.IgnoreCase | RegexOptions.Singleline),
+                Routes.Add(new Regex(routeAttr.UriRegex, RegexOptions.CultureInvariant | RegexOptions.IgnoreCase | RegexOptions.Singleline),
                     routeAttr.ViewModelOrFacade);
             }
         }
@@ -59,7 +59,7 @@ namespace Charri.MvvmCross.Plugins.Routing
                 }
 
                 Mvx.TaggedWarning("MvxRoutingService",
-                    "There following RegExs match the provided url ({0}), each RegEx must be unique (otherwise try using IMvxRoutingFacade): {1}",
+                    "The following regular expressions match the provided url ({0}), each RegEx must be unique (otherwise try using IMvxRoutingFacade): {1}",
                     matches.Count - 1,
                     string.Join(", ", matches.Select(t => t.Key.ToString())));
                 // there is more than one match
@@ -95,7 +95,7 @@ namespace Charri.MvvmCross.Plugins.Routing
 
         public Task RouteAsync(string url)
         {
-            return RouteAsync(url, MvxRequestedBy.Bookmark);
+            return RouteAsync(url, MvxRequestedBy.UserAction);
         }
         
         public async Task RouteAsync(string url, MvxRequestedBy requestedBy)

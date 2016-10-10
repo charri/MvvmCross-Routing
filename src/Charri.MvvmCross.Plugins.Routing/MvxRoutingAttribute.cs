@@ -12,12 +12,12 @@ namespace Charri.MvvmCross.Plugins.Routing
     {
         public Type ViewModelOrFacade { get; private set; }
         
-        public string UrlRegex { get; private set; }
+        public string UriRegex { get; private set; }
 
-        public MvxRoutingAttribute(Type viewModelOrFacade, [RegexPattern] string urlRegex)
+        public MvxRoutingAttribute(Type viewModelOrFacade, [RegexPattern] string uriRegex)
         {
             ViewModelOrFacade = viewModelOrFacade;
-            UrlRegex = urlRegex;
+            UriRegex = uriRegex;
         }
     }
 }
