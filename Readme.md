@@ -9,7 +9,7 @@ The solution is composed of:
 * Routing Attribute (ViewModel/Facade, URI regex)
 * RoutingFacades are constructed via Mvx.IocConstruct to profit from dependency injection
 * RoutingService, registered as a singleton, uses IMvxViewDispatcher to show the viewmodels
-* Necessary additions to Android (Activity.OnNewIntent) + iOS (AppDelegate.OpenUrl) (look a the example project for me infos)
+* Necessary additions to Android (Activity.OnNewIntent) + iOS (AppDelegate.OpenUrl) (look a the example project for more infos)
 
 You can also use this solution for triggering deeplink from outside the app:
 * Register a custom scheme (i.e. "foo") in our app (look a the example project for me infos)
